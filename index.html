@@ -7,9 +7,21 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" id="123" >
+    <input type="button" onclick="M()" value="Tính">
     <script>
-    var  myColor = ["Red", "Green", "White", "Black"];
-    document.write(myColor);
+        function M() {
+            var a = (document.getElementById("123").value);
+            // var str = a.toString()
+            var result = [a[0]]
+            for(let i = 1 ; i < a.length ; i++){
+                if(Number(result)%2==0) {
+                    result.push('-' , a[i])
+                } else {
+                    result.push(a[i])
+                }
+            }document.write(a[i])
+        }
     </script>
 </body>
-</html>  
+</html>
